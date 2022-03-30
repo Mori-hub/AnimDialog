@@ -142,7 +142,7 @@ Install my-project with https://jitpack.io/
 ## Gifs
 ![see](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif)
 
-<img src="./assets/image.gif" width="50%" height="50%"/>
+<img src=https://user-images.githubusercontent.com/53067774/160862797-5877e9f3-83ca-4085-ae1b-18cc4d4524ad.gif"./assets/image.gif" width="50%" height="50%"/>
 
 ## 🚀 About Me
 I'm a full stack developer...
