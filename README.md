@@ -19,7 +19,7 @@ Install my-project with https://jitpack.io/
 
 ```bash
   dependencies {
-	        implementation 'com.github.Mori-hub:Number-Separator:0.1.0'
+	        implementation 'com.github.Mori-hub:AnimDialog:1.0.0'
 	}
 ```
     
@@ -135,11 +135,10 @@ Install my-project with https://jitpack.io/
 ```
 ## Screenshots
 
+<img src="https://user-images.githubusercontent.com/53067774/160858704-e1cf1aa2-97b1-4316-ac60-7c00ce295976.jpg" width="23%"></img> <img src="https://user-images.githubusercontent.com/53067774/160858713-29e5770f-c8ad-4e8f-9677-f36fe7c4350b.jpg" width="23%"></img> <img src="https://user-images.githubusercontent.com/53067774/160858717-1da18815-b570-4715-8d34-38e50dc91cba.jpg" width="23%"></img> <img src="https://user-images.githubusercontent.com/53067774/160858719-bed28e8d-a90a-47f1-8d74-813138edbf5a.jpg" width="23%"></img> <img src="https://user-images.githubusercontent.com/53067774/160858722-cd74b838-5943-450e-85cb-0845094ce428.jpg" width="23%"></img> <img src="https://user-images.githubusercontent.com/53067774/160858732-fbe7717c-e7e5-440c-8af5-e6595ca211b5.jpg" width="23%"></img> <img src="https://user-images.githubusercontent.com/53067774/160858775-081fb05e-7107-4504-9452-0ecbb1deb665.jpg" width="23%"></img> 
 
-| col 1      | col 2      |
-|------------|-------------|
-| <img src="" width="250"> | <img src="" width="250"> |
-
+## Screenshots - Two Header Class
+<img src="https://user-images.githubusercontent.com/53067774/160859376-391fb014-df75-40d9-aae2-056de3d0d3d8.jpg" width="23%"></img> 
 ## Gifs
 ![see](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif)
 
