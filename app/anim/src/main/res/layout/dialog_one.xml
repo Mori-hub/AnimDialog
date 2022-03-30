@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout_dia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageHead_dia"
+        android:layout_marginTop="-25dp"
+        android:background="@drawable/rect_45"
+        android:padding="8dp">
+
+        <TextView
+
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rect_45w"
+            android:padding="16dp"
+            android:shadowColor="#B3B2B2"
+            android:shadowDx="4"
+
+            android:shadowDy="4"
+
+
+            android:shadowRadius="4"
+
+            android:textAlignment="center"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageHead_dia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rect_45"
+        android:src="@android:drawable/btn_star_big_off"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainLayout_dia"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negativeButton"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="@android:string/cancel"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/middleButton"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="s"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/positiveButton"
+            style="@android:style/Widget.Holo.Button.Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="@android:string/ok"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+</RelativeLayout>
