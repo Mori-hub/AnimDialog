@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             }
         // If you need create your Theme!
         animDialog.dialogTheme(
-            true,
+            false,
             "White",
             "#DFD3C3", "black",
             "#000B49", "yellow"
