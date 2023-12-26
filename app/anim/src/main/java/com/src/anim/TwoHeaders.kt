@@ -7,7 +7,6 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.View
 import android.view.Window
-import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
@@ -24,7 +23,7 @@ class TwoHeaders(private val context: Context) {
     init {
 
         dialogTwo.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialogTwo.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE)
+//        dialogTwo.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE)
         dialogTwo.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialogTwo.setCancelable(false)
         dialogTwo.setContentView(R.layout.dialog_two)
