@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
-
+apply plugin: 'maven-publish'
 group='com.github.Mori-hub'
 android {
     defaultConfig {
@@ -54,7 +54,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.1'
+                version = '1.0.2'
             }
         }
     }
