@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 group='com.github.Mori-hub'
-version = '1.0.7'
+version = '1.0.8'
 
 android {
     defaultConfig {
@@ -36,6 +36,17 @@ android {
     lint {
         checkReleaseBuilds false
     }
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+
+        singleVariant('debug') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -49,16 +60,24 @@ dependencies {
     implementation 'com.github.jitpack:gradle-simple:1.0'
     implementation 'com.google.guava:guava:27.0.1-android'
 }
+
 afterEvaluate {
     publishing {
         publications {
 // Creates a Maven publication called "release".
             release(MavenPublication) {
-                from components.release
+                components.getByName('release')
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
                 version = '1.0.7'
             }
+            debug(MavenPublication) {
+                components.getByName('debug')
+                groupId = 'com.github.Mori-hub'
+                artifactId = 'AnimDialog'
+                version = '1.0.8'
+            }
+
         }
     }
 }

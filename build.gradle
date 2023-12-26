@@ -8,11 +8,7 @@ buildscript {
         maven { url "https://jitpack.io" }
     }
 
-    dependencies {
-        classpath "com.android.tools.build:gradle:7.0.4"
-        classpath "com.android.tools.build:gradle:8.3.0-alpha18"
-        classpath "com.android.tools.build:gradle:7.1.3"
-    }
+
 
 
 
@@ -27,3 +23,11 @@ plugins {
 tasks.register('clean', Delete) {
     delete rootProject
 }
+
+
+//https://github.com/jitpack/android-example/blob/master/build.gradle
+//https://stackoverflow.com/questions/70911679/unable-to-publishtomavenlocal-due-to-components-java
+//https://stackoverflow.com/questions/75955013/could-not-resolve-com-android-tools-buildgradle7-4-1
+//https://stackoverflow.com/questions/72429685/gradle-publishtomavenlocal-task-not-found-please-add-the-maven-publish-or
+//https://stackoverflow.com/questions/67253670/could-not-get-unknown-property-release-for-softwarecomponentinternal-maven-p
+//https://stackoverflow.com/questions/71365373/software-components-will-not-be-created-automatically-for-maven-publishing-from/71366104#71366104
