@@ -69,7 +69,7 @@ afterEvaluate {
                 components.getByName('release')
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.7'
+                version = '1.0.8'
             }
             debug(MavenPublication) {
                 components.getByName('debug')
