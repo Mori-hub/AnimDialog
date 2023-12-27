@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 group='com.github.Mori-hub'
-version = '1.0.8'
+version = '1.0.9'
 
 android {
     defaultConfig {
@@ -69,13 +69,13 @@ afterEvaluate {
                 components.getByName('release')
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.8'
+                version = '1.0.9'
             }
             debug(MavenPublication) {
                 components.getByName('debug')
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.8'
+                version = '1.0.9'
             }
 
         }
