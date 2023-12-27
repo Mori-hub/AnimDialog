@@ -3,9 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
-group='com.github.Mori-hub'
-version = '1.0.9'
-
+//group='com.github.Mori-hub'
+//version = '1.0.9'
+//apply plugin: 'com.android.library'
 android {
     defaultConfig {
         compileSdk 34
@@ -36,17 +36,17 @@ android {
     lint {
         checkReleaseBuilds false
     }
-    publishing {
-        singleVariant('release') {
-            withSourcesJar()
-            withJavadocJar()
-        }
-
-        singleVariant('debug') {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
+//    publishing {
+//        singleVariant('release') {
+//            withSourcesJar()
+//            withJavadocJar()
+//        }
+//
+//        singleVariant('debug') {
+//            withSourcesJar()
+//            withJavadocJar()
+//        }
+//    }
 }
 
 dependencies {
@@ -57,8 +57,8 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'com.github.jitpack:gradle-simple:1.0'
-    implementation 'com.google.guava:guava:27.0.1-android'
+//    implementation 'com.github.jitpack:gradle-simple:1.0'
+//    implementation 'com.google.guava:guava:27.0.1-android'
 }
 
 afterEvaluate {
@@ -69,14 +69,14 @@ afterEvaluate {
                 components.getByName('release')
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.9'
+                version = '1.0.10'
             }
-            debug(MavenPublication) {
-                components.getByName('debug')
-                groupId = 'com.github.Mori-hub'
-                artifactId = 'AnimDialog'
-                version = '1.0.9'
-            }
+//            debug(MavenPublication) {
+//                components.getByName('debug')
+//                groupId = 'com.github.Mori-hub'
+//                artifactId = 'AnimDialog'
+//                version = '1.0.9'
+//            }
 
         }
     }
