@@ -2,10 +2,13 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
+//    id 'com.github.dcendents.android-maven'
 }
-//group='com.github.Mori-hub'
+group='com.github.Mori-hub'
 //version = '1.0.9'
-//apply plugin: 'com.android.library'
+apply plugin: 'com.android.library'
+//apply plugin: 'com.github.dcendents.android-maven'
+
 android {
     defaultConfig {
         compileSdk 34
@@ -57,8 +60,9 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-//    implementation 'com.github.jitpack:gradle-simple:1.0'
-//    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'com.github.jitpack:gradle-simple:1.0'
+    implementation 'com.google.guava:guava:27.0.1-android'
+
 }
 
 afterEvaluate {
@@ -69,13 +73,13 @@ afterEvaluate {
                 components.getByName('release')
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.10'
+                version = '1.0.11'
             }
 //            debug(MavenPublication) {
 //                components.getByName('debug')
 //                groupId = 'com.github.Mori-hub'
 //                artifactId = 'AnimDialog'
-//                version = '1.0.9'
+//                version = '1.0.11'
 //            }
 
         }
