@@ -22,11 +22,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
     namespace 'com.src.anim'
 }
@@ -48,7 +48,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.12'
+                version = '1.0.1'
                 pom {
                     description = 'A description of my library'
 
