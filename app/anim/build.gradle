@@ -1,22 +1,15 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'maven-publish'
-//    id 'com.github.dcendents.android-maven'
 }
-group='com.github.Mori-hub'
-//version = '1.0.9'
-apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
 
+group='com.github.Mori-hub'
 android {
-    defaultConfig {
-        compileSdk 34
-    }
+    compileSdk 33
 
     defaultConfig {
         minSdk 21
-        targetSdk 34
+        targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -36,52 +29,31 @@ android {
         jvmTarget = '1.8'
     }
     namespace 'com.src.anim'
-    lint {
-        checkReleaseBuilds false
-    }
-//    publishing {
-//        singleVariant('release') {
-//            withSourcesJar()
-//            withJavadocJar()
-//        }
-//
-//        singleVariant('debug') {
-//            withSourcesJar()
-//            withJavadocJar()
-//        }
-//    }
 }
 
 dependencies {
-
-    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.android.material:material:1.7.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation 'com.github.jitpack:gradle-simple:1.0'
-    implementation 'com.google.guava:guava:27.0.1-android'
-
 }
-
 afterEvaluate {
     publishing {
         publications {
 // Creates a Maven publication called "release".
             release(MavenPublication) {
-                components.getByName('release')
+                from components.release
                 groupId = 'com.github.Mori-hub'
                 artifactId = 'AnimDialog'
-                version = '1.0.11'
-            }
-//            debug(MavenPublication) {
-//                components.getByName('debug')
-//                groupId = 'com.github.Mori-hub'
-//                artifactId = 'AnimDialog'
-//                version = '1.0.11'
-//            }
+                version = '1.0.12'
+                pom {
+                    description = 'A description of my library'
 
+                }
+            }
         }
     }
 }

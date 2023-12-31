@@ -4,16 +4,14 @@ plugins {
 }
 
 android {
-    defaultConfig {
-        compileSdk 34
-    }
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.src.tools"
         minSdk 21
-        targetSdk 34
-        versionCode 2
-        versionName "1.0.1"
+        targetSdk 33
+        versionCode 3
+        versionName "1.0.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -25,28 +23,23 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    namespace "com.src.tools"
-    lint {
-        checkReleaseBuilds false
-    }
+    namespace 'com.src.tools'
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.core:core-ktx:1.10.1' //(sdk 34)
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.android.material:material:1.7.0' //(sdk 34)
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-//    implementation project(path: ':app:anim')
+    implementation project(path: ':app:anim')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    implementation project(":app:anim")
-
 }
