@@ -7,11 +7,11 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.View
 import android.view.Window
-import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+
 @SuppressLint("SetTextI18n")
 class TwoHeaders(private val context: Context) {
     private val dialogTwo = Dialog(context)
@@ -28,11 +28,11 @@ class TwoHeaders(private val context: Context) {
         dialogTwo.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         dialogTwo.setCancelable(false)
         dialogTwo.setContentView(R.layout.dialog_two)
-        dialogTitle = dialogTwo.findViewById(R.id.headerText2) as TextView
-        dialogHeaderImage = dialogTwo.findViewById(R.id.imageHead_dia2) as ImageView
-        dialogDescription = dialogTwo.findViewById(R.id.description2) as TextView
-        dialogPositiveButton = dialogTwo.findViewById(R.id.positiveButton2) as Button
-        dialogNegativeButton = dialogTwo.findViewById(R.id.negativeButton2) as Button
+        dialogTitle = dialogTwo.findViewById(R.id.headerText2)!!
+        dialogHeaderImage = dialogTwo.findViewById(R.id.imageHead_dia2)!!
+        dialogDescription = dialogTwo.findViewById(R.id.description2)!!
+        dialogPositiveButton = dialogTwo.findViewById(R.id.positiveButton2)!!
+        dialogNegativeButton = dialogTwo.findViewById(R.id.negativeButton2)!!
 
     }
 

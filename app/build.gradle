@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.src.tools"
         minSdk 21
-        targetSdk 33
-        versionCode 3
-        versionName "1.0.3"
+        targetSdk 34
+        versionCode 4
+        versionName "1.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,9 +34,9 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.10.1' //(sdk 34)
+    implementation 'androidx.core:core-ktx:1.12.0' //(sdk 34)
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.7.0' //(sdk 34)
+    implementation 'com.google.android.material:material:1.11.0' //(sdk 34)
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation project(path: ':app:anim')
     testImplementation 'junit:junit:4.13.2'

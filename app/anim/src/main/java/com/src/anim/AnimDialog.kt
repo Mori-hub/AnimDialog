@@ -9,7 +9,6 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.View
 import android.view.Window
-import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
@@ -37,11 +36,11 @@ class AnimDialog(private val context: Context) {
         dialog.setCancelable(false)
         dialog.setContentView(R.layout.dialog_one)
         dialogCardView = dialog.findViewById(R.id.mainLayout_dia)
-        dialogHeaderImage = dialog.findViewById(R.id.imageHead_dia) as ImageView
-        dialogDescription = dialog.findViewById(R.id.description) as TextView
-        dialogPositiveButton = dialog.findViewById(R.id.positiveButton) as Button
-        dialogNegativeButton = dialog.findViewById(R.id.negativeButton) as Button
-        dialogMiddleButton = dialog.findViewById(R.id.middleButton) as Button
+        dialogHeaderImage = dialog.findViewById(R.id.imageHead_dia)!!
+        dialogDescription = dialog.findViewById(R.id.description)!!
+        dialogPositiveButton = dialog.findViewById(R.id.positiveButton)!!
+        dialogNegativeButton = dialog.findViewById(R.id.negativeButton)!!
+        dialogMiddleButton = dialog.findViewById(R.id.middleButton)!!
         dialogHeaderImage.startAnimation(
             AnimationUtils.loadAnimation(
                 context,
