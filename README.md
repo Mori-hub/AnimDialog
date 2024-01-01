@@ -28,13 +28,23 @@ Install my-project with https://jitpack.io/
 <img alt="JitPack" src="https://img.shields.io/jitpack/v/github/Mori-hub/AnimDialog">
 
 ## TOML Kotlin
-1. dependencies{ ... implementation (libs.anim.dialogs.mori)}
-2. libs.version.toml:
+1. build.gradle.kts:
+```javascript
+dependencies
+   { ...
+   implementation (libs.anim.dialogs.mori)
+   }
+  ``` 
+3. libs.version.toml:
+```javascript
    [versions]
-   anim_dialogs="1.0.14"
-   [libraries]
-   anim_dialogs_mori = { module = "com.github.Mori-hub:AnimDialog", version.ref = "anim_dialogs" }
 
+   anim_dialogs="1.0.14"
+
+   [libraries]
+
+   anim_dialogs_mori = { module = "com.github.Mori-hub:AnimDialog", version.ref = "anim_dialogs" }
+```
 
 ## Usage
 
